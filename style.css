@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.barometer-container {
+  flex-direction: column;
+}
+
+.flex-align {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.full-size {
+  width: 100%;
+  height: 100%;
+}
+
+.barometer {
+  background-color: #c3d3d2;
+  margin: 100px auto;
+  width: 500px;
+  height: 500px;
+  padding: 5px;
+}
+
+.circle-one {
+  border: solid 15px #7d7c7e;
+  margin: auto;
+  width: 95%;
+  height: 95%;
+  padding: 15px;
+  background-color: #b4b0b3;
+}
+
+.circle-two {
+  border: solid 10px white;
+  margin: auto;
+  background-color: white;
+}
+
+.circle-three {
+  border: solid 130px blue;
+  margin: auto;
+  border-top-color: #ffb401;
+  border-left-color: #fe0000;
+  border-bottom-color: white;
+  border-right-color: #4cb050;
+}
+
+.circle-three::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid 125px;
+  margin: auto;
+  border-color: rgba(255, 255, 255, 0.4);
+  border-radius: 100%;
+}
+
+.circle-four {
+  position: relative;
+  width: 45%;
+  height: 45%;
+  margin: auto;
+  z-index: 10;
+}
+
+.circle-four::after {
+  content: "";
+  position: absolute;
+  left: -140px;
+  border-top: 25px solid transparent;
+  border-right: 170px solid #7d7c7e;
+  border-bottom: 25px solid transparent;
+}
+
+.circle-five {
+  background-color: white;
+  border: solid 17px #b4b0b3;
+  z-index: 100;
+}
